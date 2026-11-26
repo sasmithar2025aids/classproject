@@ -2,12 +2,12 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from './pages/login';
 import Projects from './pages/projects';
 import Tasks from './pages/tasks';
-import Team from './pages/team';
+import Teams from './pages/team';
 import Clients from './pages/clients';
 import Dashboard from './pages/dashboard';
-import Calendar  from "./pages/calendar";
+import Calender  from "./pages/calender";
 import Settings from "./pages/settings";
-import Register from './components/register';
+import Register from './pages/register';
 
 
 function App() {
