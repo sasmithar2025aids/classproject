@@ -58,7 +58,7 @@ function Register() {
                 />
                 <p>{errors.age?.message}</p>
 
-                <button type="submit">Register</button>
+                <button type="submit">Register.</button>
             </form>
         </div>
     );
