@@ -1,15 +1,21 @@
-import { useState } from "react";
+import { useState ,useEffect} from "react";
 import { useLocation } from "react-router-dom";
 function Dashboard() {
     const location = useLocation();
     const[userData, setUserdata] = useState("");
-    function displaydata(){
+   // function displaydata(){
+    //    setUserdata(location.state);
+      //  console.log(userData)
+    //}
+    useEffect(() => {
         setUserdata(location.state);
-        console.log(userData)
-    }
+        console.log(userData);
+    },[])
+
     return (
         <>
-           <button onClick = {displaydata}>button</button>
+          <div>{userData.username}</div>
+          <div>{userData.password}</div>
         </>
     );
 }
